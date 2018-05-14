@@ -11,27 +11,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <style>
-
-        body{
-          height: 100%;
-        }
         .main_container{
           position: absolute;
-          height: 100%!important;
-          margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto; }
+          height: 100%;
+          margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto; padding-bottom: 60px; }
         .cont{
             position: relative;
             display: flex;
 
         }
 
-        .send{
-          width: 25.5%!important;
-          height: 60px;
-          left:4vw;
-
-          margin-left: 16px!important;
-        }
         .postcontainer{
           margin-top: 20px;
           padding: 5px;
@@ -74,19 +63,13 @@
           top: 0;
           left: 0;
           right: 0;
-          bottom: 0;<div class="btn-group btn-group-lg" role="group" aria-label="...">...</div>
-<div class="btn-group" role="group" aria-label="...">...</div>
-<div class="btn-group btn-group-sm" role="group" aria-label="...">...</div>
+          bottom: 0;
           width:100%!important;
           height: 100%!important;
           background: green
 
         }
     </style>
-
-    <script type="text/javascript">
-      var counter =0;
-    </script><button onclick="cliked()" data-long-press-delay="500" type="button" id="send" class="form-control  " value="Write a message"></button>
   </head>
   <body>
 
@@ -118,7 +101,7 @@
           <a >
             <div class="media">
               <div class="media-left media-top">
-                <img alt="64x64" class="media-object" data-src="holder.js/64x64" style="width: 64px; height: 64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNjM0OGIwNGJlZiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE2MzQ4YjA0YmVmIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxNC41IiB5PSIzNS45Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
+                <img alt="64x64" class="media-object" data-src="holder.js/64x64" style="width: 64px; height: 64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGbackground: green;Rlcl8xNjM0OGIwNGJlZiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE2MzQ4YjA0YmVmIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxNC41IiB5PSIzNS45Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
               </div>
               <div class="media-body">
                 <h4 class="media-heading">Post a gif animation</h4>
@@ -153,16 +136,15 @@
       </div>
 
     </div> -->
-
+    <textarea class="form-control postarea"></textarea>
     <div class="card inputborader">
       <div class="container row">
 
-        <!-- <textarea class="form-control postarea"></textarea> -->
+
       <div class="input-group mb-3 ">
         <button type="button" class="btn form-control btn-outline-secondary messagebox">Secondary</button>
-        <button onclick="cliked()" data-long-press-delay="500" type="button" class="send form-control  " value="Write a message"></button>
-        <button onclick="cliked()" data-long-press-delay="500" type="button" class="send form-control  " value="Write a message"></button>
-        <button onclick="cliked()" data-long-press-delay="500" type="button"  class="send form-control  " value="Write a message"></button>
+        <input onclick="android.clicked()" type="button" class="form-control  " value="Send Message">
+        <!-- <button type="button" class="form-control btn btn-lg btn-block  messagebox">Block level button</button> -->
 
       </div>
     </div>
@@ -174,8 +156,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integr
     ity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-    <script src="js/long-press"></script>
 
     <script type="text/javascript">
       // var posttext = $(".maintext");
@@ -212,17 +192,11 @@
       }
 
       function cliked(){
-        android.clicked()
-
-        var send = document.getElementsById("send");
-
-        send.addEventListener('click',function(e){
-          window.setInterval(function(){alert("ADF")},3000);
-          alert("ADSFASDfa");
-        });
-
-        console.log(counter);
+        android.performClick()
       }
+
+
+
 
     </script>
 
