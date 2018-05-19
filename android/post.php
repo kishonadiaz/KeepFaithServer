@@ -13,7 +13,7 @@
     <style>
 
         body{
-          height: 100%;
+
         }
         .main_container{
           position: absolute;
@@ -25,12 +25,23 @@
 
         }
 
-        .send{
-          width: 25.5%!important;
-          height: 60px;
-          left:4vw;
+        .send-gallery{
+          height:60px;
+          margin-top: 10px;
 
-          margin-left: 16px!important;
+        }
+        .send-adjust{
+          height: 55px!important;
+          margin-top: 15px;
+          margin-right: 10px!important;
+        }
+        .send{
+          width: 75px!important;
+          height: 60px;
+
+          left:7vw;
+
+          margin-left: 20px!important;
         }
         .postcontainer{
           margin-top: 20px;
@@ -57,26 +68,34 @@
 
 
         }
+        img{
+          position: relative;
+          width: 70px;
+          height:70px;
+          left: auto;
+          right: 10px;
+          bottom: 18px;
+        }
+
         input[type="button"]{
           width: 107.5%!important;
           color:lightgray;
         }
         .messagebox{
           border: 0;
- background: none;
- box-shadow: none;
- border-radius: 0px;
+           background: none;
+           box-shadow: none;
+           border-radius: 0px;
 
         }
+
         textarea{
           border-radius: 5%!important;
           position: absolute;
           top: 0;
           left: 0;
           right: 0;
-          bottom: 0;<div class="btn-group btn-group-lg" role="group" aria-label="...">...</div>
-<div class="btn-group" role="group" aria-label="...">...</div>
-<div class="btn-group btn-group-sm" role="group" aria-label="...">...</div>
+          bottom: 0;
           width:100%!important;
           height: 100%!important;
           background: green
@@ -84,14 +103,10 @@
         }
     </style>
 
-    <script type="text/javascript">
-      var counter =0;
-    </script><button onclick="cliked()" data-long-press-delay="500" type="button" id="send" class="form-control  " value="Write a message"></button>
-  </head>
   <body>
 
   <div class="container main_container">
-    <!-- <div class="row">
+    <!-- <div class="row">emphysema
 
       <div class="container">
 
@@ -159,10 +174,10 @@
 
         <!-- <textarea class="form-control postarea"></textarea> -->
       <div class="input-group mb-3 ">
-        <button type="button" class="btn form-control btn-outline-secondary messagebox">Secondary</button>
-        <button onclick="cliked()" data-long-press-delay="500" type="button" class="send form-control  " value="Write a message"></button>
-        <button onclick="cliked()" data-long-press-delay="500" type="button" class="send form-control  " value="Write a message"></button>
-        <button onclick="cliked()" data-long-press-delay="500" type="button"  class="send form-control  " value="Write a message"></button>
+
+        <button onclick="cliked()" type="button" class="send form-control  " value="Write a message"><img class="send-gallery" src="../assets/images/gallery.png" /></button>
+        <button onclick="cliked()" type="button" class="send form-control  " value="Write a message"><img src="../assets/images/camrea.png" /></button>
+        <button onclick="cliked()" type="button"  class="send  form-control  " value="Write a message"><img class="send-adjust" src="../assets/images/writeamessage.png" /></button>
 
       </div>
     </div>
@@ -175,7 +190,6 @@
     ity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    <script src="js/long-press"></script>
 
     <script type="text/javascript">
       // var posttext = $(".maintext");
@@ -213,15 +227,6 @@
 
       function cliked(){
         android.clicked()
-
-        var send = document.getElementsById("send");
-
-        send.addEventListener('click',function(e){
-          window.setInterval(function(){alert("ADF")},3000);
-          alert("ADSFASDfa");
-        });
-
-        console.log(counter);
       }
 
     </script>
